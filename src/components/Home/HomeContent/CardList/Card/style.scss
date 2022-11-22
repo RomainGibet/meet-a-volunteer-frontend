@@ -1,0 +1,35 @@
+@use 'src/styles/vars';
+
+.experience__card{
+  position: relative;
+  margin : 1em 0em !important;
+}
+
+.ui.card>.image>img{
+  object-fit: cover;
+  height: 227px;
+}
+
+.button__experience__details{
+  margin-top: 1em !important;
+}
+.experience__preview {
+  overflow: hidden;
+}
+
+.experience__title--card{
+  margin-top: 0.5em!important;
+}
+
+.experience__preview {
+  text-align: justify;
+  font-style: italic;
+}
+
+.user__image {
+  position: absolute !important;
+  top: 11.5em;
+  right: 9em;
+  background:none !important;
+  border-radius: 50%;
+}

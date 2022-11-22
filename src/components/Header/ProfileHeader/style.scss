@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.home__profile{
+    position: absolute !important;
+    z-index: 10;
+    top: 1em;
+    right: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1025px) {
+        top: 1.5em;
+        right: 1.5em;
+    }
+
+    &--avatar {
+        margin-right: 0% !important;
+        width: 40px !important;
+
+        @media screen and (min-width: 1025px) {
+            width: 70px !important;
+        }
+    }
+
+    &--pseudo {
+       font-weight: bold;
+       color : vars.$color-main !important;
+       text-shadow: #ffffff 0.1em 0.1em 0.2em;
+    }
+
+    &--button {
+        background-color: vars.$color-main !important;
+        color : vars.$color-light2 !important;
+    }
+}

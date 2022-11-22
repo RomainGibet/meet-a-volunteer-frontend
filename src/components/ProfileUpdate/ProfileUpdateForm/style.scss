@@ -1,0 +1,33 @@
+@use 'src/styles/vars';
+
+.profile__form--imgpreview img{
+    max-width: 250px;
+}
+
+.profile__form--content {
+    @media (min-width: 1025px) {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+.profile__form--main__input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1em;
+ 
+
+    @media (min-width: 1025px) {
+        display: block;
+    }
+
+    & .label{
+        background-color: white;
+        color: black;
+    }
+}
+
+.ui.labeled.input:not([class*="corner labeled"]) .label:first-child+input{
+     border : none;
+}

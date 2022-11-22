@@ -1,0 +1,53 @@
+@use 'src/styles/vars';
+
+.received__message {
+    background-color: vars.$color-light1;
+    border-radius: 3px;
+    margin: 1em auto;
+    padding: 0.5em;
+    width: 100%;
+
+    @media screen and (min-width: 1025px) {
+        width: 60%;
+    }
+
+    &__topBar {
+        display: flex;
+        justify-content: space-between;
+
+        & img{
+            width: 190px;
+        }
+
+        & .date{
+            font-size: 12px;
+            color : vars.$color-dark1;
+        }
+
+        &--icon{
+            color : vars.$color-main;
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+        }
+    }
+
+
+    &__content .preview{
+        font-size: 12px ;
+        height: 20px ;
+        overflow:hidden;
+        text-overflow: ellipsis;        
+    }
+
+    &__content p {
+        cursor: pointer;
+        text-align: left;
+        padding-top: 0.3em;
+        font-size: 14px;
+    }
+
+    &--unRead {
+        font-weight: bold;
+    }
+}

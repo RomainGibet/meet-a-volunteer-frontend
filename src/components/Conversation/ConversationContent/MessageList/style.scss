@@ -1,0 +1,7 @@
+@use 'src/styles/vars';
+
+.message__list {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column-reverse;
+}

@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.logIn__form--display{
+  z-index: 10;
+}
+
+.logIn__button{
+  position: absolute;
+  top: 4em;
+  right: 1em;
+  width: 85px;
+
+  @media screen and (min-width: 1025px) {
+    top: 1.5em;
+    right: 8em;
+  }
+}
+
+.logIn__form--hidden{
+  display: none;
+  position: absolute !important;
+  top: 3em;
+  right: 4.1em;
+
+  border-radius: 10px;
+  padding: 1em;
+  background-color: vars.$color-light2;
+  color : vars.$color-dark2;
+}
+
+
+.close__button{
+  margin-left: 80% !important;
+}
+
+
+.logIn__form--display{
+  display: block;
+}

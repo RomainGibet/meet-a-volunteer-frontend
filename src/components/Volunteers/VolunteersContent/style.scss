@@ -1,0 +1,10 @@
+@use 'src/styles/vars';
+
+.volunteers__content{
+
+    @media screen and (min-width: 1025px) {
+      width:75%;
+    }
+  }
+
+  
